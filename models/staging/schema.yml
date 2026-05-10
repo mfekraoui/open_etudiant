@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_profils
+    description: Table de nettoyage des données sociodémographiques des étudiants
+    columns:
+      - name: USER_ID
+        description: Identifiant technique unique de l'étudiant 
+        tests:
+          - not_null
+
+      - name: GENDER
+        description: Genre déclaré par l etudiant 
+        tests:
+          - accepted_values:
+              arguments:
+                 values: ['Male', 'Female', 'Other']
+
+      - name: YEAR_PATH_STARTED
+        description: Année de début du parcours 
+        tests:
+          - not_null

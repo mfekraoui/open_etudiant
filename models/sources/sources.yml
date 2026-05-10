@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: etudiant 
+    description: Source contenant les données internes des étudiants du parcours Data
+    database: profiletudiant_dbt 
+    schema: RAW
+    tables:
+      - name: profils
