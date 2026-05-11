@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: mart_student_demographics
+    description: "Table analytique finale sur le profil sociodémographique des étudiants."
+
+    columns:
+      - name: REGION
+        description: "Région des étudiants."
+
+      - name: GENDER
+        description: "Genre des étudiants."
+
+      - name: AGE_GROUP
+        description: "Tranche d'âge."
+
+      - name: YEAR_PATH_STARTED
+        description: "Année de début du parcours."
+
+      - name: nb_students
+        description: "Nombre d'étudiants distincts."
