@@ -7,7 +7,7 @@ SELECT
     YEAR_PATH_STARTED,
     COUNT(DISTINCT USER_ID) AS nb_students
 
-FROM {{ ref('stg_profils') }}
+FROM {{ ref('int_profils_enriched') }}
 
 GROUP BY
     REGION,
